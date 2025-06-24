@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Buildozer build files (for Android APK)
+build/
+bin/
+*.apk
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# Kivy files
+*.pyo
+*.pyd
+
+# macOS / Windows / Linux system files
+.DS_Store
+Thumbs.db
+
+# VS Code / PyCharm / IDE configs
+.vscode/
+.idea/
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+
+# Logs
+*.log
+
+# Environment variables file (if you use one)
+.env
+
+# Buildozer spec files (optional if they contain sensitive info)
+# buildozer.spec   # uncomment if you store private data in spec
+
+# Personal or backup files
+*.bak
+*.tmp
