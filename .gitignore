@@ -42,7 +42,9 @@ dist/
 .env
 
 # Buildozer spec files (optional if they contain sensitive info)
-buildozer.spec   # uncomment if you store private data in spec
+buildozer.spec
+asdasd
+asdasd.pub
 
 # Personal or backup files
 *.bak
