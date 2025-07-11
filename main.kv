@@ -1,0 +1,208 @@
+MDScreenManager:
+    LoginSignupScreen:
+        name: "login"
+
+<LoginSignupScreen@MDScreen>:
+    md_bg_color: 0, 0, 0, 1
+
+    MDFloatLayout:
+        id: signup_white
+        md_bg_color: 1, 1, 1, 1
+        size_hint: 1, 2
+        pos_hint: {"center_x": .15, "center_y": 0.3}
+        canvas.before:
+            PushMatrix
+            Rotate:
+                angle:30
+                origin: self.center
+        canvas.after:
+            PopMatrix
+
+
+    MDBoxLayout:
+        id: signup_info
+        orientation: "vertical"
+        spacing: "15dp"
+        padding: "20dp"
+        size_hint: None, None
+        adaptive_height: True
+        pos_hint: {"center_y": 0.5}
+
+        MDBoxLayout:
+            id: signup_info_header
+            orientation: "vertical"
+            spacing: "15dp"
+            padding: "20dp"
+            size_hint: 1, None
+            adaptive_height: True
+            MDLabel:
+                text: "Sign Up"
+                halign: "center"
+                font_style: "Headline"
+                size_hint_y: None
+                adaptive_height: True
+
+            MDDivider:
+                size_hint_x: .5
+                theme_divider_color: "Custom"
+                color: 0, 0, 0, 1
+                pos_hint: {'center_x': .5}
+
+        MDScrollView:
+            id: signup_info_scroll
+            do_scroll_x: False
+            size_hint_y: None
+
+            MDBoxLayout:
+                orientation: "vertical"
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                adaptive_height: True
+
+                MDTextField:
+                    mode: "outlined"
+                    size_hint_x: .8
+                    pos_hint: {"center_x": .5}
+                    MDTextFieldHintText:
+                        text: "User Name"
+                    MDTextFieldTrailingIcon:
+                        icon: "account"
+                    MDTextFieldHelperText:
+                        text: "Only Alpha Numeric and Underscore _ are allowed"
+                        mode: "on_error"
+                    MDTextFieldMaxLengthText:
+                        max_text_length: 12
+
+                MDTextField:
+                    mode: "outlined"
+                    size_hint_x: .8
+                    pos_hint: {"center_x": .5}
+                    MDTextFieldHintText:
+                        text: "Email id"
+                    MDTextFieldTrailingIcon:
+                        icon: "email"
+                    MDTextFieldHelperText:
+                        text: "Enter a valid Email id"
+                        mode: "on_error"
+
+                MDTextField:
+                    mode: "outlined"
+                    size_hint_x: .8
+                    pos_hint: {"center_x": .5}
+                    input_filter: "int"
+                    MDTextFieldHintText:
+                        text: "Mobile Number"
+                    MDTextFieldTrailingIcon:
+                        icon: "phone"
+                    MDTextFieldHelperText:
+                        text: "Enter a valid Phone number"
+                        mode: "on_error"
+                    MDTextFieldMaxLengthText:
+                        max_text_length: 10
+
+                MDTextField:
+                    mode: "outlined"
+                    size_hint_x: .8
+                    pos_hint: {"center_x": .5}
+                    password: True
+                    MDTextFieldHintText:
+                        text: "Password"
+                    MDTextFieldTrailingIcon:
+                        icon: "lock"
+                    MDTextFieldMaxLengthText:
+                        max_text_length: 16
+
+                MDTextField:
+                    mode: "outlined"
+                    size_hint_x: .8
+                    pos_hint: {"center_x": .5}
+                    password: True
+                    MDTextFieldHintText:
+                        text: "Confirm Password"
+                    MDTextFieldTrailingIcon:
+                        icon: "lock-check"
+                    MDTextFieldMaxLengthText:
+                        max_text_length: 16
+
+        MDBoxLayout:
+            id: signup_info_footer
+            orientation: "vertical"
+            spacing: "15dp"
+            padding: "20dp"
+            size_hint: 1, None
+            adaptive_height: True
+            MDButton:
+                style: "tonal"
+                pos_hint: {"center_x": 0.5}
+                MDButtonText:
+                    text: "REGISTER"
+
+            MDBoxLayout:
+                orientation: "horizontal"
+                spacing: "10dp"
+                size_hint: None, None
+                height: "40dp"
+                width: self.minimum_width
+                pos_hint: {"center_x": 0.5}
+
+                MDIconButton:
+                    icon: "facebook"
+                    style: "tonal"
+                    theme_text_color: "Custom"
+                    text_color: 0.23, 0.35, 0.6, 1
+
+                MDIconButton:
+                    icon: "google"
+                    style: "outlined"
+                    theme_text_color: "Custom"
+                    text_color: 1, 0, 0, 1
+
+                MDIconButton:
+                    icon: "twitter"
+                    style: "tonal"
+                    theme_text_color: "Custom"
+                    text_color: 0.1, 0.6, 1, 1
+
+    MDBoxLayout:
+        id: sign_wel
+        orientation: "vertical"
+        spacing: "15dp"
+        padding: "20dp"
+        size_hint: None, None
+        adaptive_size: True
+        MDLabel:
+            text: "Welcome"
+            font_style: "Display"
+            role: "medium"
+            halign: "right"
+            size_hint: None, None
+            width: 350
+            text_size: self.width, None
+            adaptive_height: True
+            text_color: 1, 1, 1, 1
+        MDLabel:
+            text: "Welcome to YourOwn Dictionary — your personalized learning space."
+            font_style: "Title"
+            halign: "right"
+            text_size: self.width, None
+            adaptive_height: True
+            role: "medium"
+            text_color: 1, 1, 1, 1
+
+
+    MDFloatLayout:
+        md_bg_color: 1, 1, 1, 1
+        opacity: 0
+        disabled: True
+        size_hint: 1, 2
+        pos_hint: {"center_x": .85, "center_y": 0.3}
+        canvas.before:
+            PushMatrix
+            Rotate:
+                angle:-30
+                origin: self.center
+        canvas.after:
+            PopMatrix
+
+
