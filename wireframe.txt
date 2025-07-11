@@ -1,0 +1,48 @@
+Login and Sign up
+
+
+────────────────────────────────────────────
+|              								    ↑                     					      |
+|          							 Animated Logo                 				      | ← Fade/slide in from top
+|                                       												      |
+|        			  ┌───────────────────────┐     		      |
+|        			  │       				 MDCard        	 	│      		      | ← Card slides up from bottom
+|          			  │ 	     ──────────────────         │      		      |
+|          			  │  				Login to YourOwn     		│ ← Heading
+|          			  │                   						        │
+|         			  │ 				 [📧 Email Input   ] 		 │ ← MDTextField with icon + floating label
+|          			  │			      [🔒 Password Input]  		│
+|          			  │                      							 │
+|          			  │ 				  [  LOGIN BUTTON ] 		  │ ← MDRaisedButton with ripple
+|          			  │							                        │
+|          			  │  				 Forgot Password?    		│ ← MDLabel (clickable)
+|         			  │───────────────────────│
+|          			  │			  Don’t have an account?		│
+|          			  │			 [ SIGNUP BUTTON HERE ]	│ ← Switches to Signup screen with animation
+|          			  └───────────────────────┘
+|                                 				           								     |
+|          						Optional animated background    			     | ← E.g., subtle gradient or particles
+|                                      					  								     |
+────────────────────────────────────────────
+
+
+ 🎨 For Signup page:
+
+ Same card layout, but includes:
+
+	 Name input
+	Email input
+  	Password input
+  	Signup button
+  	“Already have an account? Login” link
+
+---
+
+✅ Animation flow idea:
+
+ When screen loads → logo fades/slides in from top
+ Card with inputs slides up from bottom with slight bounce
+ Inputs & buttons fade in sequentially for a smooth experience
+
+---
+

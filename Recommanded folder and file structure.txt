@@ -1,0 +1,18 @@
+YourOwnDictionaryApp/
+├─ main.py
+├─ assets/          # Images, videos, fonts
+├─ screens/         # Each screen in a separate .py file
+│  ├─ splash_screen.py
+│  ├─ login_screen.py
+│  ├─ home_screen.py
+│  ├─ dashboard_screen.py
+│  ├─ create_dict_screen.py
+│  └─ view_dict_screen.py
+├─ kv/              # Kivy/KivyMD .kv files (optional but clean)
+│  ├─ splash.kv
+│  ├─ login.kv
+│  ├─ home.kv
+│  ├─ dashboard.kv
+│  ├─ create_dict.kv
+│  └─ view_dict.kv
+└─ buildozer.spec   # Buildozer config file

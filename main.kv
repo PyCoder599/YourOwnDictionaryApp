@@ -140,6 +140,27 @@ MDScreenManager:
 
             MDBoxLayout:
                 orientation: "horizontal"
+                spacing: "5dp"
+                adaptive_size: True
+                pos_hint: {"center_x": 0.5}
+
+                MDLabel:
+                    text: "Already registered?"
+                    halign: "center"
+                    theme_text_color: "Secondary"
+                    adaptive_width: True
+
+                MDButton:
+                    style: "text"
+                    on_release: app.switch_to_login()
+                    MDButtonText:
+                        text: "Click here"
+                        theme_text_color: "Custom"
+                        text_color: 0, 0.5, 1, 1
+
+
+            MDBoxLayout:
+                orientation: "horizontal"
                 spacing: "10dp"
                 size_hint: None, None
                 height: "40dp"

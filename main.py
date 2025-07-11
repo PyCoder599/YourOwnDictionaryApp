@@ -27,7 +27,7 @@ class YOB(MDApp):
         H = Window.height
         info.width = max(self.width_cal(H), 0)
         wel.center = (self.width_cal(H*0.7) + (W - self.width_cal(H*0.7)) / 2, H*0.7)
-        scroll.height = min(H - header.height - footer.height, 490)
+        scroll.height = min(H - header.height - footer.height, 500)
 
     def width_cal(self, y1):
         W = Window.width
@@ -35,6 +35,8 @@ class YOB(MDApp):
         ans = 0.4330 * W - 0.25 * H + 0.15 * W - (y1 - (0.25 * W + 0.4330 * H + 0.3 * H)) / 1.7320
         return ans
 
+    def switch_to_login(self):
+        print("Ready to go")
 
 if __name__ == "__main__":
     YOB().run()
